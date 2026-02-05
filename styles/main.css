@@ -1,24 +1,242 @@
 @import "./tokens.css";
 @import "./typography.css";
 
+*
+
+/* =========================
+   Base
+   ========================= */
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
 }
 
+/* =========================
+   Layout helpers
+   ========================= */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-light {
+  background: var(--color-bg-card);
+}
+
+.section-header {
+  margin-bottom: 64px;
+}
+
+.section-eyebrow {
+  color: var(--color-primary);
+  font-size: 12px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 1000;
+
+  background: transparent;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.nav-inner {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: var(--color-primary);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav.is-scrolled {
+  background: var(--color-bg-card);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.nav-link.is-active {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* =========================
+   Hero
+   ========================= */
 .hero {
-  min-height: 100vh;
+  position: relative;
+  height: 870px;
+    padding-top: 64px; /* nav height */
+  background-image: url("../assets/images/61db5db51a4b92d02698d8cb02afcef21e404bd6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, .7),
+      rgba(0, 0, 0, .2),
+      rgba(0, 0, 0, 0));
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.hero-eyebrow {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+}
+
+.hero-year {
+  color: var(--color-primary);
+}
+
+.hero-title span {
+  display: block;
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 24px;
+  margin: 20px 0 48px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   About
+   ========================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about-image figcaption {
+  margin-top: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.about-content p {
+  line-height: 26px;
+}
+
+.about-meta {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.about-meta strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
+  background: var(--color-bg-dark);
+  color: var(--color-bg-page);
+  padding: 60px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+.footer span {
+  display: block;
+  font-size: 12px;
+  opacity: .6;
+}
 
+.footer-lang button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 6px 12px;
+  cursor: pointer;
+}
 
-
+.footer-lang .is-active {
+  background: var(--color-primary);
+  color: white;
+}
