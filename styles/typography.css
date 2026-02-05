@@ -1,0 +1,117 @@
+/* Display */
+.text-display-lg {
+color: #0A0A0A;
+ font-size: 72px;
+ font-family: Inter;
+ font-weight: 800;
+ line-height: 72px;
+ letter-spacing: 0.12px;
+ word-wrap: break-word
+}
+
+.text-display {
+color: #0A0A0A;
+font-size: 60px;
+font-family: Inter;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0.26px;
+word-wrap: break-word
+}
+
+/* Headings */
+h1 {
+color: #0A0A0A;
+ font-size: 48px;
+ font-family: Inter;
+ font-weight: 700;
+ line-height: 48px;
+ letter-spacing: 0.35px;
+ word-wrap: break-word
+}
+
+h2 {
+color: #0A0A0A;
+ font-size: 36px;
+ font-family: Inter;
+ font-weight: 700;
+ line-height: 40px;
+ letter-spacing: 0.37px;
+ word-wrap: break-word
+}
+
+h3 {
+color: #0A0A0A;
+ font-size: 30px;
+ font-family: Inter;
+ font-weight: 700;
+ line-height: 36px;
+ letter-spacing: 0.40px;
+ word-wrap: break-word
+}
+
+h4 {
+color: #0A0A0A;
+ font-size: 24px;
+ font-family: Inter;
+ font-weight: 600;
+ line-height: 32px;
+ letter-spacing: 0.07px;
+ word-wrap: break-word
+}
+
+h5 {
+color: #0A0A0A;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 600;
+ line-height: 28px;
+ word-wrap: break-word
+}
+
+h6 {
+color: #0A0A0A;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 600;
+ line-height: 28px;
+ word-wrap: break-word
+}
+
+/* Body */
+.text-body-lg {
+color: #0A0A0A;
+ font-size: 18px;
+ font-family: Inter;
+ font-weight: 400;
+ line-height: 28px;
+ word-wrap: break-word
+}
+
+
+body {
+color: #0A0A0A;
+ font-size: 16px;
+ font-family: Inter;
+ font-weight: 400;
+ line-height: 24px;
+ word-wrap: break-word
+}
+
+.text-body-sm {
+color: #0A0A0A;
+ font-size: 14px;
+ font-family: Inter;
+ font-weight: 400;
+ line-height: 20px;
+ word-wrap: break-word
+}
+
+.caption {
+color: #0A0A0A;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 400;
+ line-height: 16px;
+ word-wrap: break-word
+}

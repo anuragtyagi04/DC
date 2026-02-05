@@ -1,19 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Site</title>
-  <link rel="stylesheet" href="styles/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Site</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components/buttons.css">
 </head>
+
 <body>
 
-  <header class="hero">
-    <h1>Your headline</h1>
-    <p>Your subheadline</p>
-    <button>Call to Action</button>
-  </header>
+    <header class="hero">
+       <section style="padding: 40px; display: grid; gap: 32px;">
 
-  <script src="scripts/main.js"></script>
+  <!-- PRIMARY BUTTONS -->
+  <div>
+    <h3>Primary Buttons</h3>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn btn--primary btn--sm">Small</button>
+      <button class="btn btn--primary btn--md">Medium</button>
+      <button class="btn btn--primary btn--lg">Large</button>
+      <button class="btn btn--primary btn--xl">Extra Large</button>
+    </div>
+  </div>
+
+  <!-- PRIMARY WITH ICON -->
+  <div>
+    <h3>Primary Buttons with Icon</h3>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn btn--primary btn--md">
+        <span class="btn__icon">
+          <!-- example icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14"/>
+          </svg>
+        </span>
+        <span class="btn__label">Download</span>
+      </button>
+
+      <button class="btn btn--primary btn--md" disabled>
+        <span class="btn__label">Disabled</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- SECONDARY -->
+  <div>
+    <h3>Secondary Buttons</h3>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn btn--secondary btn--md">Secondary</button>
+      <button class="btn btn--secondary btn--md">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 12h14m0 0l-6-6m6 6l-6 6"/>
+          </svg>
+        </span>
+        <span class="btn__label">Learn More</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- OUTLINED -->
+  <div>
+    <h3>Outlined Buttons</h3>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn btn--outlined btn--md">Outlined</button>
+      <button class="btn btn--outlined btn--md">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 5v14m-7-7h14"/>
+          </svg>
+        </span>
+        <span class="btn__label">Download PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- GHOST -->
+  <div>
+    <h3>Ghost Buttons</h3>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <button class="btn btn--ghost btn--md">Ghost Button</button>
+      <button class="btn btn--ghost btn--md">Ghost Primary</button>
+    </div>
+  </div>
+
+  <!-- ICON ONLY -->
+  <div>
+    <h3>Icon Buttons</h3>
+    <div style="display: flex; gap: 16px;">
+      <button class="btn btn--primary btn--icon">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </span>
+      </button>
+
+      <button class="btn btn--outlined btn--icon">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3v12m0 0l4-4m-4 4l-4-4M5 21h14"/>
+          </svg>
+        </span>
+      </button>
+
+      <button class="btn btn--ghost btn--icon">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 12h14"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+    </header>
+
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

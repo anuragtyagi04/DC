@@ -1,0 +1,42 @@
+:root {
+  /* =========================
+     Font families
+     ========================= */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+ 
+
+  /* Colors */
+    
+  /* =========================
+     Brand / Primary
+     ========================= */
+  --color-primary: #D97941;        /* Main brand color */
+  --color-primary-dark: #B85F2F;   /* Hover / active */
+  --color-primary-light: #E89563;  /* Accents */
+  --color-secondary: #E8E3DC;      /* Neutral UI accent */
+
+  /* =========================
+     Backgrounds
+     ========================= */
+  --color-bg-page: #FAF9F7;        /* Page background */
+  --color-bg-dark: #1A1410;        /* Dark sections */
+  --color-bg-card: #FFFFFF;       /* Cards & panels */
+  --color-bg-muted: #F5F5F4;       /* Subtle backgrounds */
+
+  /* =========================
+     Text
+     ========================= */
+  --color-text-primary: #0A0A0A;   /* Primary text */
+  --color-text-secondary: #525252; /* Secondary text */
+  --color-text-tertiary: #737373;  /* Muted / helper text */
+  --color-text-destructive: #DC2626; /* Errors */
+
+  /* =========================
+     Borders & Focus
+     ========================= */
+  --color-border: #E5E5E5;         /* Default borders */
+  --color-border-strong: #D4D4D4;  /* Emphasized borders */
+  --color-focus-ring: #D97941;     /* Focus states */
+}
