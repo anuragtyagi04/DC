@@ -8,6 +8,10 @@
 
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/components/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,7 +20,7 @@
         <div class="container nav-inner">
             <div class="nav-brand">DAVINA CHANEL FOX</div>
 
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="nav-menu">
                 <a class="nav-link is-active" href="#">HOME</a>
                 <a class="nav-link" href="#">PRESS</a>
                 <a class="nav-link" href="#">GALLERY</a>
@@ -25,6 +29,12 @@
                 <a class="nav-link" href="#">ABOUT ME</a>
                 <a class="nav-link" href="#">CONTACT</a>
             </nav>
+            <button class="nav-burger" id="nav-burger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
     </header>
 
@@ -36,7 +46,7 @@
         <div class="container hero-content">
             <div class="hero-eyebrow">
                 <span class="hero-year">2026</span><br />
-                <span>Actress Portfolio</span>
+                <span style="font-weight: 400;">Actress Portfolio</span>
             </div>
 
             <h1 class="hero-title">
@@ -45,23 +55,22 @@
                 <span>FOX</span>
             </h1>
 
-            <p class="hero-subtitle">
+            <p style="font-weight: 400;" class="hero-subtitle">
                 Actress for Film, Television & Theatre
             </p>
 
             <div class="hero-actions">
                 <button class="btn btn--primary btn--md">
-                        <span class="btn__icon">
-                            <!-- example icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path d="M4 2L13.3333 8L4 14V2Z" stroke="white" stroke-width="1.33333"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </span>
-                        <span class="btn__label">Watch Showreel</span>
-                    </button>
-                    <button style="background-color: white;"class="btn btn--outlined btn--md">Contact</button>
+                    <span class="btn__icon">
+                        <!-- example icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 2L13.3333 8L4 14V2Z" stroke="white" stroke-width="1.33333"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="btn__label">WATCH SHOWREEL</span>
+                </button>
+                <button style="background-color: white;" class="btn btn--outlined btn--md">CONTACT</button>
             </div>
         </div>
         <div class="image-credit-wrapper">
@@ -82,26 +91,198 @@
 
             <div class="about-grid">
                 <figure class="about-image">
-                    <img src="https://placehold.co/576x768" alt="Portrait" />
-                    <figcaption>PHOTO — Dirk Moeller, Hamburg</figcaption>
+                    <img src="assets/images/about_me.jpg" alt="Portrait" />
+                    <figcaption>PHOTO - Dirk Moeller - Hamburg</figcaption>
                 </figure>
 
                 <div class="about-content">
                     <p>
-                        Davina Chanel Fox (*1997, Texas/USA) is a German-American actress
-                        who grew up in Rhineland-Palatinate...
+                        Davina Chanel Fox (*1997, Texas/USA) is a German-American actress who grew up in
+                        Rhineland-Palatinate. After early experience in radio (including Antenne Kaiserslautern), she
+                        trained at the Schule für Schauspiel Hamburg from 2018 to 2022.
                     </p>
+                    <p class="with-divider">
+                        She has performed on stage at venues including Junges Schauspielhaus Hamburg and the
+                        Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is
+                        best known for Tatort (Ludwigshafen) and has appeared since 2024 as LKA investigator Mara
+                        Hermann.
 
+                    </p>
                     <ul class="about-meta">
-                        <li><strong>Playing Age</strong><span>18–35</span></li>
+                        <li><strong>Playing Age</strong><span>18 - 35</span></li>
                         <li><strong>Height</strong><span>5’1</span></li>
                         <li><strong>Languages</strong><span>German, English, Pfälzisch</span></li>
                         <li><strong>Location</strong><span>Hamburg, Berlin, Atlanta</span></li>
                     </ul>
+                    <div class="label-group">
+                        <span class="label">Film</span>
+                        <span class="label">Theater</span>
+                        <span class="label">TV</span>
+                        <span class="label">Commercial</span>
+                    </div>
 
-                    <button class="btn btn-outline btn-sm">Download CV (PDF)</button>
+                    <button class="btn btn--outlined btn--md">
+                        <span class="btn__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10"
+                                    stroke="#D97941" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4.6665 6.66675L7.99984 10.0001L11.3332 6.66675" stroke="#D97941"
+                                    stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 10V2" stroke="#D97941" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="btn__label">Download PDF</span>
+                    </button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTIONS -->
+    <section class="section section-cream">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-eyebrow">02 — PRODUCTIONS</span>
+                <h2>TV & THEATER</h2>
+            </header>
+            <div class="productions-grid">
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">COMING SOON</span>
+                        <img src="assets/images/IMG_1562.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3 style="margin-bottom:3px;">Tatort – Avanti</h3>
+                        <p class="year">2026</p>
+                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Super Duper Long Directors<br>
+                            Channel – ARD
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">TV</span>
+                        <img src="assets/images/IMG_1227.WEBP" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Tatort – Mike &amp; Nisha</h3>
+                        <p class="year">2025</p>
+                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Didi Danquart<br>
+                            Channel – ARD
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">THEATER</span>
+                        <img src="assets/images/Der lange Schlaf_LB_24_25_013.jpg" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Der lange Schlaf</h3>
+                        <p class="year">2025</p>
+                        <p class="role" style="text-transform: uppercase;">As TV Host, Chidera</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Angelika Zacek<br>
+                            Theater – Landesbühne Nord
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">TV</span>
+                        <img src="assets/images/IMG_1228.WEBP" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Tatort – Der Stelzenmann</h3>
+                        <p class="year">2024</p>
+                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Miguel Alexandre<br>
+                            Channel – ARD
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">THEATER</span>
+                        <img src="assets/images/IMG_1229.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Die Bremer Stadtmusikanten</h3>
+                        <p class="year">2024</p>
+                        <p class="role" style="text-transform: uppercase;">As Chicken</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Hartmut Uhlemann<br>
+                            Theater – Ernst-Deutsch Theater
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">TV</span>
+                        <img src="assets/images/IMG_1230.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Tatort – Dein gutes Recht</h3>
+                        <p class="year">2024</p>
+                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Martin Eigler<br>
+                            Channel – ARD
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">THEATER</span>
+                        <img src="assets/images/IMG_1233.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Jim Knopf und Lukas der Lokomotivführer</h3>
+                        <p class="year">2023</p>
+                        <p class="role" style="text-transform: uppercase;">As (Main Role) Jim Knopf</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Kirsten Uttendorf<br>
+                            Theater – Burgfestspiele Bad Vilbel
+                        </p>
+                    </div>
+                </article>
+
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge">TV</span>
+                        <img src="assets/images/IMG_1234.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3>Tatort – Gold</h3>
+                        <p class="year">2023</p>
+                        <p class="role" style="text-transform: uppercase;">As Angelika Berger</p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            Director – Ester Wenger<br>
+                            Channel – ARD
+                        </p>
+                    </div>
+                </article>
+
+
+                <!-- repeat for each production -->
+            </div>
+
+
         </div>
     </section>
 

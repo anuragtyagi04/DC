@@ -7,3 +7,11 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("is-scrolled");
   }
 });
+const burger = document.getElementById("nav-burger");
+const menu = document.getElementById("nav-menu");
+
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("is-open");
+  burger.classList.toggle("is-open");
+});

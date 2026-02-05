@@ -2,7 +2,7 @@
   /* =========================
      Font families
      ========================= */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont,
+  --font-sans: --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
  
@@ -12,7 +12,7 @@
   /* =========================
      Brand / Primary
      ========================= */
-  --color-primary: #D97941;        /* Main brand color */
+  --color-primary: #DB6824;        /* Main brand color */
   --color-primary-dark: #B85F2F;   /* Hover / active */
   --color-primary-light: #E89563;  /* Accents */
   --color-secondary: #E8E3DC;      /* Neutral UI accent */
