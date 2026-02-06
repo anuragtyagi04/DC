@@ -1,7 +1,6 @@
 @import "./tokens.css";
 @import "./typography.css";
 
-*
 
 /* =========================
    Base
@@ -58,7 +57,10 @@ body {
 
 .section-cream {
   background: #F2E7DD;
+}
 
+.section-brown {
+  background: #5A3522;
 }
 
 .section-header {
@@ -188,7 +190,7 @@ body {
 
 .hero-title span {
   display: block;
-  font-size: clamp(56px, 8vw, 128px);
+  font-size: clamp(56px, min(8vw, 9vh), 128px);
   font-weight: 900;
   line-height: 1;
   color: var(--color-primary);
@@ -202,6 +204,7 @@ body {
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -574,4 +577,227 @@ label shit
   opacity: 0.75;
   margin: 2px;
   /* pushes meta to bottom */
+}
+
+
+/* VIDEo */
+.video-placeholder {
+  margin: 64px auto 0;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+
+  background: #E8DDD3;
+  /* your cream */
+  border-radius: 5px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* PLAY BUTTON */
+.video-play-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background: var(--color-primary);
+  border: none;
+  color: white;
+
+  font-size: 28px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* Caption */
+.video-caption {
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5A3522;
+}
+
+.video-play-btn:hover {
+  background: var(--color-primary-dark);
+  transform: scale(1.05);
+}
+
+.video-placeholder iframe {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*GALLERY*/
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.gallery-item {
+  margin: 0;
+
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+.gallery-item figcaption {
+  margin-top: 12px;
+  font-size: 12px;
+  padding: 16px;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #2A1A12;
+  text-align: center;
+}
+
+.gallery-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2A1A121A;
+  text-align: center;
+}
+
+/* media */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.media-tile {
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.media-tile img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-caption {
+  border: 2px solid #2A1A121A;
+  padding: 8px 16px;
+}
+
+.media-source {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.media-meta {
+  display: block;
+  font-size: 14px;
+  color: #2A1A12;
+}
+
+/*contact*/
+.contact-header h2 {
+  margin-top: 8px;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #2A1A12;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 48px;
+}
+.contact-details {
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.contact-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #2A1A12;
+  margin-bottom: 6px;
+}
+
+.contact-link {
+  display: inline-block;
+  font-size: 20px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+.contact-text {
+  display: block;
+  font-size: 18px;
+  color: #2A1A12;
+  margin-bottom: 4px;
+}
+.contact-social {
+  color: #2A1A12;
+  display: inline-flex;
+  align-items: center;
+    text-decoration: none;
+    padding-top: 8px;;
+}
+.contact-social-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.55px;
+}
+
+.contact-social:hover {
+  color: var(--color-primary);
+}
+.contact-action {
+    text-align: center;
+  margin-top: 32px;
 }
