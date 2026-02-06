@@ -96,3 +96,16 @@ document.querySelectorAll(".footer-lang button").forEach(button => {
 });
 const savedLang = localStorage.getItem("language") || "en";
 setLanguage(savedLang);
+document.getElementById("btn-showreel").addEventListener("click", () => {
+  document.getElementById("showreel").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
+
+document.getElementById("btn-contact").addEventListener("click", () => {
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
