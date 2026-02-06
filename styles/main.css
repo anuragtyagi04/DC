@@ -29,10 +29,16 @@ body {
 
 @media (max-width: 1650px) {
   .container {
-    padding: 0 32px;
-    margin: 0 100px;
+    padding: 0 100px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
 
 .with-divider {
   padding-bottom: 35px;
@@ -474,9 +480,8 @@ label shit
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
   gap: 32px;
-  justify-content: space-between;
-  /* centers rows nicely */
-  margin-top: 48px;
+  justify-content: center;
+  /* 👈 THIS is the key */
 }
 
 /* CARD */
@@ -493,7 +498,8 @@ label shit
 .production-image {
   height: 260px;
   position: relative;
-  flex-shrink: 0; /* 👈 key line */
+  flex-shrink: 0;
+  /* 👈 key line */
 }
 
 
@@ -554,7 +560,8 @@ label shit
   font-size: 11px;
   line-height: 1.5;
   opacity: 0.75;
-  margin: 2px; /* pushes meta to bottom */
+  margin: 2px;
+  /* pushes meta to bottom */
 }
 
 
