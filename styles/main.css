@@ -624,16 +624,21 @@ label shit
 
   background: var(--color-primary);
   border: none;
-  color: white;
-
-  font-size: 28px;
-  line-height: 1;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   cursor: pointer;
+  padding-left: 10px;
+}
+
+.video-play-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.video-play-btn:hover svg {
+  transform: scale(1.05);
 }
 
 /* Caption */
