@@ -748,13 +748,15 @@ label shit
   gap: 28px;
   margin-bottom: 48px;
 }
+
 .contact-details {
-    text-align: center;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 48px;
 }
+
 .contact-label {
   display: block;
   font-size: 12px;
@@ -774,30 +776,34 @@ label shit
 .contact-link:hover {
   text-decoration: underline;
 }
+
 .contact-text {
   display: block;
   font-size: 18px;
   color: #2A1A12;
   margin-bottom: 4px;
 }
+
 .contact-social {
   color: #2A1A12;
   display: inline-flex;
   align-items: center;
-    text-decoration: none;
-    padding-top: 8px;;
+  text-decoration: none;
+  padding-top: 8px;
 }
+
 .contact-social-text {
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0.55px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.55px;
 }
 
 .contact-social:hover {
   color: var(--color-primary);
 }
+
 .contact-action {
-    text-align: center;
+  text-align: center;
   margin-top: 32px;
 }
