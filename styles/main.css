@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -126,11 +130,29 @@ body {
 }
 
 .nav-link {
+  position: relative;
+  text-decoration: none;
   color: var(--color-primary);
   font-size: 12px;
   letter-spacing: 1.2px;
   text-decoration: none;
 }
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #D97941;
+  transition: width 0.3s ease;
+}
+
+.nav-link.is-active::after {
+  width: 100%;
+}
+
 
 .nav-menu {
   display: flex;
@@ -140,11 +162,6 @@ body {
 .nav.is-scrolled {
   background: var(--color-bg-card);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
-.nav-link.is-active {
-  color: var(--color-primary);
-  border-bottom: 2px solid var(--color-primary);
 }
 
 /* =========================
