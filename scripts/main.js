@@ -1,3 +1,4 @@
+import { translations } from "./i18n.js";
 const nav = document.getElementById("site-nav");
 
 window.addEventListener("scroll", () => {
@@ -18,8 +19,8 @@ burger.addEventListener("click", () => {
 
 const placeholder = document.getElementById("video-placeholder");
 
-  placeholder.addEventListener("click", () => {
-    placeholder.innerHTML = `
+placeholder.addEventListener("click", () => {
+  placeholder.innerHTML = `
       <iframe
         src="https://www.youtube.com/embed/du-TY1GUFGk?autoplay=1"
         title="Showreel"
@@ -29,7 +30,7 @@ const placeholder = document.getElementById("video-placeholder");
         style="width:100%; height:100%; border-radius:5px;"
       ></iframe>
     `;
-  });
+});
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section[id]");
 
@@ -64,3 +65,34 @@ navLinks.forEach(link => {
     burger.classList.remove("is-open");
   });
 });
+
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const keys = el.dataset.i18n.split(".");
+    let text = translations[lang];
+
+    keys.forEach(key => {
+      text = text[key];
+    });
+
+    if (text) el.textContent = text;
+  });
+
+  // update active button state
+  document.querySelectorAll(".footer-lang button").forEach(btn =>
+    btn.classList.remove("is-active")
+  );
+  const activeBtn = document.querySelector(`[data-lang="${lang}"]`);
+  if (activeBtn) activeBtn.classList.add("is-active");
+
+  // save preference
+  localStorage.setItem("language", lang);
+}
+document.querySelectorAll(".footer-lang button").forEach(button => {
+  button.addEventListener("click", () => {
+    const lang = button.dataset.lang;
+    setLanguage(lang);
+  });
+});
+const savedLang = localStorage.getItem("language") || "en";
+setLanguage(savedLang);

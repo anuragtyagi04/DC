@@ -23,13 +23,13 @@
             <div class="nav-brand">DAVINA CHANEL FOX</div>
 
             <nav class="nav-menu" id="nav-menu">
-                <a class="nav-link is-active" href="#home">HOME</a>
-                <a class="nav-link" href="#about">ABOUT ME</a>
-                <a class="nav-link" href="#productions">TV & THEATER</a>
-                <a class="nav-link" href="#showreel">SHOWREEL</a>
-                <a class="nav-link" href="#gallery">GALLERY</a>
-                <a class="nav-link" href="#press">PRESS</a>
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link is-active" href="#home" data-i18n="nav.home">HOME</a>
+                <a class="nav-link" href="#about" data-i18n="nav.aboutMe">ABOUT ME</a>
+                <a class="nav-link" href="#productions" data-i18n="nav.tvAndTheater">TV & THEATER</a>
+                <a class="nav-link" href="#showreel" data-i18n="nav.showreel">SHOWREEL</a>
+                <a class="nav-link" href="#gallery" data-i18n="nav.gallery">GALLERY</a>
+                <a class="nav-link" href="#press" data-i18n="nav.press">PRESS</a>
+                <a class="nav-link" href="#contact" data-i18n="nav.contact">CONTACT</a>
             </nav>
             <button class="nav-burger" id="nav-burger" aria-label="Open menu">
                 <span></span>
@@ -41,8 +41,6 @@
     </header>
 
 
-
-
     <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
@@ -50,7 +48,7 @@
         <div class="container hero-content">
             <div class="hero-eyebrow">
                 <span class="hero-year">2026</span><br />
-                <span style="font-weight: 400;">Actress Portfolio</span>
+                <span style="font-weight: 400;" data-i18n="hero.actressPortfolio">Actress Portfolio</span>
             </div>
 
             <h1 class="hero-title">
@@ -59,7 +57,7 @@
                 <span>FOX</span>
             </h1>
 
-            <p style="font-weight: 400;" class="hero-subtitle">
+            <p style="font-weight: 400;" class="hero-subtitle" data-i18n="hero.subtitle">
                 Actress for Film, Television & Theatre
             </p>
 
@@ -72,9 +70,11 @@
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </span>
-                    <span class="btn__label">WATCH SHOWREEL</span>
+                    <span class="btn__label" data-i18n="hero.watchShowreel">WATCH SHOWREEL</span>
                 </button>
-                <button style="background-color: white;" class="btn btn--outlined btn--md">CONTACT</button>
+                <button style="background-color: white;" class="btn btn--outlined btn--md" data-i18n="hero.contact">
+                    CONTACT
+                </button>
             </div>
         </div>
         <div class="image-credit-wrapper">
@@ -86,13 +86,12 @@
 
 
 
-
     <!-- ABOUT -->
     <section id="about" class="section section-light">
         <div class="container">
             <header class="section-header">
-                <span class="section-eyebrow">01 — ABOUT ME</span>
-                <h2>ABOUT ME</h2>
+                <span class="section-eyebrow" data-i18n="about.sectionTitle">01 — ABOUT ME</span>
+                <h2 data-i18n="about.heading">ABOUT ME</h2>
             </header>
 
             <div class="about-grid">
@@ -102,12 +101,12 @@
                 </figure>
 
                 <div class="about-content">
-                    <p>
+                    <p data-i18n="about.biographyParagraphOne">
                         Davina Chanel Fox (*1997, Texas/USA) is a German-American actress who grew up in
                         Rhineland-Palatinate. After early experience in radio (including Antenne Kaiserslautern), she
                         trained at the Schule für Schauspiel Hamburg from 2018 to 2022.
                     </p>
-                    <p class="with-divider">
+                    <p class="with-divider" data-i18n="about.biographyParagraphTwo">
                         She has performed on stage at venues including Junges Schauspielhaus Hamburg and the
                         Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is
                         best known for Tatort (Ludwigshafen) and has appeared since 2024 as LKA investigator Mara
@@ -115,16 +114,18 @@
 
                     </p>
                     <ul class="about-meta">
-                        <li><strong>Playing Age</strong><span>18 - 35</span></li>
-                        <li><strong>Height</strong><span>5’1</span></li>
-                        <li><strong>Languages</strong><span>German, English, Pfälzisch</span></li>
-                        <li><strong>Location</strong><span>Hamburg, Berlin, Atlanta</span></li>
+                        <li><strong data-i18n="meta.playingAge">Playing Age</strong><span>18 - 35</span></li>
+                        <li><strong data-i18n="meta.height">Height</strong><span>5’1</span></li>
+                        <li><strong data-i18n="meta.languages">Languages</strong><span>German, English, Pfälzisch</span>
+                        </li>
+                        <li><strong data-i18n="meta.location">Location</strong><span>Hamburg, Berlin, Atlanta</span>
+                        </li>
                     </ul>
                     <div class="label-group">
-                        <span class="label">Film</span>
-                        <span class="label">Theater</span>
-                        <span class="label">TV</span>
-                        <span class="label">Commercial</span>
+                        <span class="label" data-i18n="labels.film">Film</span>
+                        <span class="label" data-i18n="labels.theater">Theater</span>
+                        <span class="label" data-i18n="labels.tv">TV</span>
+                        <span class="label" data-i18n="labels.commercial">Commercial</span>
                     </div>
 
                     <button class="btn btn--outlined btn--md">
@@ -141,7 +142,7 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </span>
-                        <span class="btn__label">Download PDF</span>
+                        <span class="btn__label" data-i18n="about.downloadPdf">Download PDF</span>
                     </button>
                 </div>
             </div>
@@ -149,162 +150,169 @@
     </section>
 
 
-
-
     <!-- PRODUCTIONS -->
     <section class="section section-cream" id="productions">
         <div class="container">
             <header class="section-header">
-                <span class="section-eyebrow">02 — PRODUCTIONS</span>
-                <h2>TV & THEATER</h2>
+                <span class="section-eyebrow" data-i18n="productions.sectionTitle">02 — PRODUCTIONS</span>
+                <h2 data-i18n="productions.heading">TV & THEATER</h2>
             </header>
             <div class="productions-grid">
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">COMING SOON</span>
+                        <span class="badge" data-i18n="badge.comingSoon">COMING SOON</span>
                         <img src="assets/images/IMG_1562.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3 style="margin-bottom:3px;">Tatort – Avanti</h3>
                         <p class="year">2026</p>
-                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Mara Herrmann
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Super Duper Long Directors<br>
-                            Channel – ARD
+                            <span data-i18n="meta.director">Director</span> – Super Duper Long Directors<br>
+                            <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">TV</span>
+                        <span class="badge" data-i18n="badge.tv">TV</span>
                         <img src="assets/images/IMG_1227.WEBP" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Tatort – Mike &amp; Nisha</h3>
                         <p class="year">2025</p>
-                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Mara Herrmann
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Didi Danquart<br>
-                            Channel – ARD
+                            <span data-i18n="meta.director">Director</span> – Didi Danquart<br>
+                            <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">THEATER</span>
+                        <span class="badge" data-i18n="badge.theater">THEATER</span>
                         <img src="assets/images/Der lange Schlaf_LB_24_25_013.jpg" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Der lange Schlaf</h3>
                         <p class="year">2025</p>
-                        <p class="role" style="text-transform: uppercase;">As TV Host, Chidera</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> TV Host, Chidera
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Angelika Zacek<br>
-                            Theater – Landesbühne Nord
+                            <span data-i18n="meta.director">Director</span> – Angelika Zacek<br>
+                            <span data-i18n="meta.theater">Theater</span> – Landesbühne Nord
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">TV</span>
+                        <span class="badge" data-i18n="badge.tv">TV</span>
                         <img src="assets/images/IMG_1228.WEBP" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Tatort – Der Stelzenmann</h3>
                         <p class="year">2024</p>
-                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Mara Herrmann
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Miguel Alexandre<br>
-                            Channel – ARD
+                            <span data-i18n="meta.director">Director</span> – Miguel Alexandre<br>
+                            <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">THEATER</span>
+                        <span class="badge" data-i18n="badge.theater">THEATER</span>
                         <img src="assets/images/IMG_1229.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Die Bremer Stadtmusikanten</h3>
                         <p class="year">2024</p>
-                        <p class="role" style="text-transform: uppercase;">As Chicken</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Chicken
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Hartmut Uhlemann<br>
-                            Theater – Ernst-Deutsch Theater
+                            <span data-i18n="meta.director">Director</span> – Hartmut Uhlemann<br>
+                            <span data-i18n="meta.theater">Theater</span> – Ernst-Deutsch Theater
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">TV</span>
+                        <span class="badge" data-i18n="badge.tv">TV</span>
                         <img src="assets/images/IMG_1230.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Tatort – Dein gutes Recht</h3>
                         <p class="year">2024</p>
-                        <p class="role" style="text-transform: uppercase;">As Mara Herrmann</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Mara Herrmann
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Martin Eigler<br>
-                            Channel – ARD
+                            <span data-i18n="meta.director">Director</span> – Martin Eigler<br>
+                            <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">THEATER</span>
+                        <span class="badge" data-i18n="badge.theater">THEATER</span>
                         <img src="assets/images/IMG_1233.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Jim Knopf und Lukas der Lokomotivführer</h3>
                         <p class="year">2023</p>
-                        <p class="role" style="text-transform: uppercase;">As (Main Role) Jim Knopf</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> <span data-i18n="role.mainRole">(Main Role)</span> Jim Knopf
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Kirsten Uttendorf<br>
-                            Theater – Burgfestspiele Bad Vilbel
+                            <span data-i18n="meta.director">Director</span> – Kirsten Uttendorf<br>
+                            <span data-i18n="meta.theater">Theater</span> – Burgfestspiele Bad Vilbel
                         </p>
                     </div>
                 </article>
 
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge">TV</span>
+                        <span class="badge" data-i18n="badge.tv">TV</span>
                         <img src="assets/images/IMG_1234.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
                         <h3>Tatort – Gold</h3>
                         <p class="year">2023</p>
-                        <p class="role" style="text-transform: uppercase;">As Angelika Berger</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Angelika Berger
+                        </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            Director – Ester Wenger<br>
-                            Channel – ARD
+                            <span data-i18n="meta.director">Director</span> – Ester Wenger<br>
+                            <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
-
-
-                <!-- repeat for each production -->
             </div>
-
-
         </div>
     </section>
-
-
 
 
     <!-- VIDEO/SHOWREEL -->
     <section class="section section-brown" id="showreel">
         <div class="container">
             <header class="section-header" style="text-align: center;">
-                <span class="section-eyebrow">03 — VIDEO</span>
-                <h2 style="color: white; padding-bottom: 10px;">SHOWREEL</h2>
-                <p style="color: white;">A selection of film and television</p>
+                <span class="section-eyebrow" data-i18n="showreel.sectionTitle">03 — VIDEO</span>
+                <h2 style="color: white; padding-bottom: 10px;" data-i18n="showreel.heading">SHOWREEL</h2>
+                <p style="color: white;" data-i18n="showreel.description">A selection of film and television</p>
             </header>
             <div class="video-placeholder" id="video-placeholder">
                 <button class="video-play-btn" aria-label="Play video">
@@ -312,10 +320,6 @@
                         <path d="M5 3L19 12L5 21V3Z" stroke="white" stroke-width="2" stroke-linejoin="round" />
                     </svg>
                 </button>
-
-                <span class="video-caption">
-                    VIDEO PLACEHOLDER — CLICK TO PLAY
-                </span>
             </div>
 
         </div>
@@ -326,52 +330,53 @@
     <section class="section section-light" id="gallery">
         <div class="container">
             <header class="section-header">
-                <span class="section-eyebrow">04 — PHOTOS</span>
-                <h2>GALLERY</h2>
+                <span class="section-eyebrow" data-i18n="gallery.sectionTitle">04 — PHOTOS</span>
+                <h2 data-i18n="gallery.heading">GALLERY</h2>
             </header>
 
             <div class="gallery-grid">
                 <figure class="gallery-item gallery-card">
                     <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        Portrait — Studio Session 2025<br>
-                        zweizeilig geht
+                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
+                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
                     <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        Portrait — Studio Session 2025<br>
-                        zweizeilig geht
+                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
+                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
                     <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        Portrait — Studio Session 2025<br>
-                        zweizeilig geht
+                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
+                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
                     <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        Portrait — Studio Session 2025<br>
-                        zweizeilig geht
+                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
+                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
+
     <!-- PRESS/MEDIA -->
     <section class="section section-cream" id="press">
         <div class="container">
             <header class="section-header">
-                <span class="section-eyebrow">05 — MEDIA</span>
-                <h2>PRESS</h2>
+                <span class="section-eyebrow" data-i18n="press.sectionTitle">05 — MEDIA</span>
+                <h2 data-i18n="press.heading">PRESS</h2>
             </header>
 
             <div class="media-grid">
@@ -380,7 +385,8 @@
                     <img src="assets/images/IMG_1235.jpg" alt="Antenne KL Interview">
                     <div class="media-caption">
                         <span class="media-source">ANTENNE-KL.DE</span>
-                        <span class="media-meta">Der Lauter Frühstücks Session </span>
+                        <span class="media-meta" data-i18n="press.mediaTitle.lauterFruehstueckSession">Der Lauter
+                            Frühstücks Session </span>
                         <span class="media-meta">2025</span>
                     </div>
                 </article>
@@ -390,7 +396,7 @@
                     <img src="assets/images/7b24444c3866d7ff600314b7b715075f5ec9bdfd.jpg" alt="Tatort Interview">
                     <div class="media-caption">
                         <span class="media-source">SWR.DE</span>
-                        <span class="media-meta">Interview </span>
+                        <span class="media-meta" data-i18n="press.mediaType.interview">Interview </span>
                         <span class="media-meta">October 2024</span>
                     </div>
                 </article>
@@ -400,7 +406,7 @@
                     <img src="assets/images/IMG_1236.WEBP" alt="Portrait Feature">
                     <div class="media-caption">
                         <span class="media-source">REINPFALZ.DE</span>
-                        <span class="media-meta">Interview</span>
+                        <span class="media-meta" data-i18n="press.mediaType.interview">Interview</span>
                         <span class="media-meta">September 2024</span>
                     </div>
                 </article>
@@ -413,21 +419,22 @@
     <section class="section section-light" id="contact">
         <div class="container">
             <header class="section-header" style="text-align: center;">
-                <span class="section-eyebrow">06 — LET'S WORK TOGETHER</span>
-                <h2 style="padding-bottom: 10px;">CONTACT</h2>
-                <p style="padding-top: 24px;font-weight:400; font-size: 20px; color:#5A3522; line-height: 28px;">For
+                <span class="section-eyebrow" data-i18n="contact.sectionTitle">06 — LET'S WORK TOGETHER</span>
+                <h2 style="padding-bottom: 10px;" data-i18n="contact.heading">CONTACT</h2>
+                <p style="padding-top: 24px;font-weight:400; font-size: 20px; color:#5A3522; line-height: 28px;"
+                    data-i18n="contact.description">For
                     booking inquiries, collaborations or further information contact down below </p>
             </header>
             <div class="contact-details">
                 <div class="contact-block">
-                    <span class="contact-label">E-MAIL</span>
+                    <span class="contact-label" data-i18n="contact.emailLabel">E-MAIL</span>
                     <a href="mailto:davina_fox@web.de" class="contact-link">
                         davina_fox@web.de
                     </a>
                 </div>
 
                 <div class="contact-block">
-                    <span class="contact-label">AGENCY</span>
+                    <span class="contact-label" data-i18n="contact.agencyLabel">AGENCY</span>
                     <span class="contact-text">Crawford Talents</span>
                     <a href="mailto:caprice@crawfordtalents.com" class="contact-link">
                         caprice@crawfordtalents.com
@@ -442,7 +449,8 @@
                             <circle cx="12" cy="12" r="4" />
                             <circle cx="17.5" cy="6.5" r="1" />
                         </svg>
-                        <span style="margin-left: 6px;" class="contact-social-text">INSTAGRAM</span>
+                        <span style="margin-left: 6px;" class="contact-social-text"
+                            data-i18n="contact.instagram">INSTAGRAM</span>
                     </a>
                 </div>
             </div>
@@ -456,30 +464,27 @@
                             <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </span>
-                    <span class="btn__label">SEND MESSAGE</span>
+                    <span class="btn__label" data-i18n="contact.sendMessage">SEND MESSAGE</span>
                 </button>
             </div>
         </div>
     </section>
 
 
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container footer-inner">
             <div>
-                <strong>DAVINA CHANEL FOX</strong>
-                <span>Actress</span>
+                <strong>DAVINA CHANEL FOX</strong> 2026
+                <span data-i18n="footer.role">Actress</span>
             </div>
-
             <div class="footer-lang">
-                <button>DE</button>
-                <button class="is-active">EN</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="en" class="is-active">EN</button>
             </div>
         </div>
     </footer>
-
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>
