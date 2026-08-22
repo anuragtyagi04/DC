@@ -14,7 +14,8 @@ export const translations = {
             actressPortfolio: "Actress Portfolio",
             subtitle: "Actress for Film, Television & Theatre",
             watchShowreel: "WATCH SHOWREEL",
-            contact: "CONTACT"
+            contact: "CONTACT",
+            vita: "VITA"
         },
 
         about: {
@@ -116,7 +117,8 @@ export const translations = {
             actressPortfolio: "Schauspielerin Portfolio",
             subtitle: "Schauspielerin für Film, Fernsehen & Theater",
             watchShowreel: "SHOWREEL ANSEHEN",
-            contact: "KONTAKT"
+            contact: "KONTAKT",
+            vita: "VITA"
         },
 
         about: {
