@@ -1,6 +1,23 @@
 import { translations } from "./i18n.js";
 const nav = document.getElementById("site-nav");
 
+window.downloadPdf = async function () {
+    const response = await fetch("assets/davina-chanel-fox_en.pdf");
+    const blob = await response.blob();
+
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = "Davina-Fox-Vita.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 80) {
     nav.classList.add("is-scrolled");
