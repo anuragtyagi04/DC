@@ -174,7 +174,7 @@
                             <span data-i18n="role.as">As</span> GRETA
                         </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            <span data-i18n="meta.director">Director</span> - KATHARINA SPORRER<br/><br/><br/>
+                            <span data-i18n="meta.director">Director</span> - KATHARINA SPORRER<br /><br /><br />
                         </p>
                     </div>
                 </article>
@@ -351,12 +351,32 @@
                 <h2 style="color: white; padding-bottom: 10px;" data-i18n="showreel.heading">SHOWREEL</h2>
                 <p style="color: white;" data-i18n="showreel.description">A selection of film and television</p>
             </header>
-            <div class="video-placeholder" id="video-placeholder">
-                <button class="video-play-btn" aria-label="Play video">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 3L19 12L5 21V3Z" stroke="white" stroke-width="2" stroke-linejoin="round" />
-                    </svg>
-                </button>
+            <div class="video-block">
+
+                <div class="video-placeholder">
+                    <video id="showreel-player" controls playsinline preload="metadata">
+                        <source src="assets/videos/video-1-about-me.mov">
+                    </video>
+                </div>
+
+                <div class="video-list">
+
+                    <button class="video-tile is-active" data-video="assets/videos/video-1-about-me.mov"
+                        data-thumbnail-time="3" type="button">
+                        <video src="assets/videos/video-1-about-me.mov" muted playsinline preload="metadata"></video>
+
+                        <span class="video-tile__title">About me</span>
+                    </button>
+
+                    <button class="video-tile" data-video="assets/videos/video-2-showreel.MOV" data-thumbnail-time="8.5"
+                        type="button">
+                        <video src="assets/videos/video-2-showreel.MOV" muted playsinline preload="metadata"></video>
+
+                        <span class="video-tile__title">Showreel</span>
+                    </button>
+
+                </div>
+
             </div>
 
         </div>
@@ -518,7 +538,8 @@
                     <a href="mailto:michael.birkner@arbeitsagentur.de" class="contact-link" style="margin-bottom: 4px;">
                         michael.birkner@arbeitsagentur.de
                     </a><br />
-                    <span data-i18n="contact.agencyNumber" style="margin-top: 5px ;font-size:16px;">Telefon:</span><span> 0228-502088944</span>
+                    <span data-i18n="contact.agencyNumber"
+                        style="margin-top: 5px ;font-size:16px;">Telefon:</span><span> 0228-502088944</span>
 
                 </div>
 

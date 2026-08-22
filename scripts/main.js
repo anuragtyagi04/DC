@@ -34,20 +34,20 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("is-open");
 });
 
-const placeholder = document.getElementById("video-placeholder");
+// const placeholder = document.getElementById("video-placeholder");
 
-placeholder.addEventListener("click", () => {
-  placeholder.innerHTML = `
-      <iframe
-        src="https://www.youtube.com/embed/du-TY1GUFGk?autoplay=1"
-        title="Showreel"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
-        style="width:100%; height:100%; border-radius:5px;"
-      ></iframe>
-    `;
-});
+// placeholder.addEventListener("click", () => {
+//   placeholder.innerHTML = `
+//       <iframe
+//         src="https://www.youtube.com/embed/du-TY1GUFGk?autoplay=1"
+//         title="Showreel"
+//         frameborder="0"
+//         allow="autoplay; fullscreen; picture-in-picture"
+//         allowfullscreen
+//         style="width:100%; height:100%; border-radius:5px;"
+//       ></iframe>
+//     `;
+// });
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section[id]");
 
@@ -120,3 +120,47 @@ document.getElementById("btn-showreel").addEventListener("click", () => {
   });
 });
 
+const showreelPlayer = document.getElementById("showreel-player");
+const videoTiles = document.querySelectorAll(".video-tile");
+
+
+// SET THUMBNAIL FRAME
+videoTiles.forEach(tile => {
+
+  const thumbnailVideo = tile.querySelector("video");
+  const thumbnailTime = Number(tile.dataset.thumbnailTime) || 0;
+
+  thumbnailVideo.addEventListener("loadedmetadata", () => {
+    thumbnailVideo.currentTime = Math.min(
+      thumbnailTime,
+      thumbnailVideo.duration
+    );
+  });
+
+});
+
+
+// SWITCH MAIN VIDEO
+videoTiles.forEach(tile => {
+
+  tile.addEventListener("click", () => {
+
+    const videoSrc = tile.dataset.video;
+
+    // change video
+    showreelPlayer.src = videoSrc;
+    showreelPlayer.load();
+
+    // start playing
+    showreelPlayer.play();
+
+    // active state
+    videoTiles.forEach(item => {
+      item.classList.remove("is-active");
+    });
+
+    tile.classList.add("is-active");
+
+  });
+
+});

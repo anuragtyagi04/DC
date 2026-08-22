@@ -597,79 +597,114 @@ label shit
 }
 
 
-/* VIDEo */
+/* VIDEO */
+/* whole video area */
+.video-block {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* MAIN VIDEO */
 .video-placeholder {
-  margin: 64px auto 0;
-  max-width: 1000px;
-  aspect-ratio: 16 / 9;
-
-  background: #E8DDD3;
-  /* your cream */
-  border-radius: 5px;
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  cursor: pointer;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #000;
 }
 
-/* PLAY BUTTON */
-.video-play-btn {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-
-  background: var(--color-primary);
-  border: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  padding-left: 10px;
+.video-placeholder video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
-.video-play-btn svg {
-  transition: transform 0.2s ease;
+
+/* VIDEO TILES */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 40px;
+
+    width: 100%;
 }
 
-.video-play-btn:hover svg {
-  transform: scale(1.05);
+
+/* TILE */
+.video-tile {
+    width: 180px;
+
+    border: 0;
+    padding: 0;
+    background: transparent;
+
+    cursor: pointer;
+    text-align: left;
+
+    opacity: 0.65;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
 }
 
-/* Caption */
-.video-caption {
-  margin-top: 16px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #5A3522;
-}
-
-.video-play-btn:hover {
-  background: var(--color-primary-dark);
-  transform: scale(1.05);
-}
-
-.video-placeholder iframe {
-  animation: fadeIn 0.4s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
+.video-tile:hover {
     opacity: 1;
-  }
+    transform: translateY(-2px);
+}
+
+.video-tile.is-active {
+    opacity: 1;
 }
 
 
+/* TILE THUMBNAIL */
+.video-tile video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 5px;
+
+    pointer-events: none;
+}
+
+
+/* TILE TITLE */
+.video-tile__title {
+    display: block;
+
+    margin-top: 8px;
+
+    color: var( --color-secondary);
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .video-block {
+        max-width: 100%;
+    }
+
+    .video-list {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .video-tile {
+        width: calc(50% - 6px);
+    }
+
+}
 /*GALLERY*/
 
 .gallery-grid {
