@@ -15,7 +15,7 @@ export const translations = {
             subtitle: "Actress for Film, Television & Theatre",
             watchShowreel: "WATCH SHOWREEL",
             contact: "CONTACT",
-            vita: "Résumé"
+            vita: "VITA"
         },
 
         about: {
