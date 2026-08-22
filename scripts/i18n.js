@@ -3,7 +3,7 @@ export const translations = {
         nav: {
             home: "HOME",
             aboutMe: "ABOUT ME",
-            tvAndTheater: "TV & THEATER",
+            tvAndTheater: "TV & THEATRE",
             showreel: "SHOWREEL",
             gallery: "GALLERY",
             press: "PRESS",
@@ -15,16 +15,16 @@ export const translations = {
             subtitle: "Actress for Film, Television & Theatre",
             watchShowreel: "WATCH SHOWREEL",
             contact: "CONTACT",
-            vita: "VITA"
+            vita: "Résumé"
         },
 
         about: {
             sectionTitle: "01 — ABOUT ME",
             heading: "ABOUT ME",
             biographyParagraphOne:
-                "Davina Chanel Fox (*1997, Texas/USA) is a German-American actress who grew up in Rhineland-Palatinate. After early experience in radio (including Antenne Kaiserslautern), she trained at the Schule für Schauspiel Hamburg from 2018 to 2022.",
+             "Davina Chanel Fox (*1997, Texas/USA) is a German-American actress who grew up in Rhineland-Palatinate. After early experience in radio hosting (Antenne Kaiserslautern), she studied acting at the Schule für Schauspiel Hamburg from 2018 to 2022, where she was awarded a scholarship in recognition of her talent.",
             biographyParagraphTwo:
-                "She has performed on stage at venues including Junges Schauspielhaus Hamburg and the Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is best known for Tatort (Ludwigshafen) and has appeared since 2024 as LKA investigator Mara Hermann.",
+                "She has performed on stage at venues including Junges Schauspielhaus Hamburg, Landesbühne Vorarlberg in Austria, and Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is best known for Tatort (Ludwigshafen) and has appeared since 2024 as LKA investigator Mara Hermann.",
             downloadPdf: "Download PDF"
         },
 
@@ -35,25 +35,25 @@ export const translations = {
             location: "Location",
             director: "Director",
             channel: "Channel",
-            theater: "Theater"
+            theater: "Theatre"
         },
 
         labels: {
             film: "Film",
-            theater: "Theater",
+            theater: "Theatre",
             tv: "TV",
             commercial: "Commercial"
         },
 
         productions: {
             sectionTitle: "02 — PRODUCTIONS",
-            heading: "TV & THEATER"
+            heading: "TV & THEATRE"
         },
 
         badge: {
             comingSoon: "COMING SOON",
             tv: "TV",
-            theater: "THEATER"
+            theater: "THEATRE"
         },
 
         role: {
@@ -125,9 +125,9 @@ export const translations = {
             sectionTitle: "01 — ÜBER MICH",
             heading: "ÜBER MICH",
             biographyParagraphOne:
-                "Davina Chanel Fox (*1997, Texas/USA) ist eine deutsch-amerikanische Schauspielerin, die in Rheinland-Pfalz aufgewachsen ist. Nach ersten Erfahrungen im Radio (u. a. bei Antenne Kaiserslautern) absolvierte sie von 2018 bis 2022 ihre Ausbildung an der Schule für Schauspiel Hamburg.",
+                "Davina Chanel Fox (*1997, Texas/USA) ist eine deutsch-amerikanische Schauspielerin, die in Rheinland-Pfalz aufgewachsen ist. Nach ersten Erfahrungen als Radiomoderatorin bei Antenne Kaiserslautern absolvierte sie von 2018 bis 2022 ihre Schauspielausbildung an der Schule für Schauspiel Hamburg, wo sie in Anerkennung ihres Talents mit einem Stipendium ausgezeichnet wurde.",
             biographyParagraphTwo:
-                "Sie stand auf Bühnen wie dem Jungen Schauspielhaus Hamburg und den Burgfestspielen Bad Vilbel, wo sie die Titelrolle in Jim Knopf spielte. Im Fernsehen ist sie vor allem durch den Tatort (Ludwigshafen) bekannt und ist seit 2024 als LKA-Ermittlerin Mara Hermann zu sehen.",
+                "Sie stand unter anderem am Jungen Schauspielhaus Hamburg, an der Landesbühne Vorarlberg in Österreich und bei den Burgfestspielen Bad Vilbel auf der Bühne, wo sie die Titelrolle in Jim Knopf spielte. Im Fernsehen ist sie vor allem durch den Tatort (Ludwigshafen) bekannt und ist seit 2024 als LKA-Ermittlerin Mara Hermann zu sehen.",
             downloadPdf: "PDF herunterladen"
         },
 
