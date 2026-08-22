@@ -72,8 +72,14 @@
                     </span>
                     <span class="btn__label" data-i18n="hero.watchShowreel">WATCH SHOWREEL</span>
                 </button>
-                <button id="btn-contact" style="background-color: white;" class="btn btn--outlined btn--md" data-i18n="hero.contact">
-                    CONTACT
+                <button
+                    id="btn-contact"
+                    style="background-color: white;"
+                    class="btn btn--outlined btn--md"
+                    data-i18n="hero.contact"
+                    onclick="window.open('assets/davina-chanel-fox_en.pdf', '_blank')"
+                >
+                    VITA
                 </button>
             </div>
         </div>
@@ -96,19 +102,18 @@
 
             <div class="about-grid">
                 <figure class="about-image">
-                    <img src="assets/images/about_me.jpg" alt="Portrait" />
-                    <figcaption>PHOTO - Dirk Moeller - Hamburg</figcaption>
+                    <img src="assets/images/aboutme_2.png" alt="Portrait" />
+                    <figcaption>PHOTO - Alan Ovaska - Berlin</figcaption>
                 </figure>
 
                 <div class="about-content">
                     <p data-i18n="about.biographyParagraphOne">
                         Davina Chanel Fox (*1997, Texas/USA) is a German-American actress who grew up in
-                        Rhineland-Palatinate. After early experience in radio (including Antenne Kaiserslautern), she
-                        trained at the Schule für Schauspiel Hamburg from 2018 to 2022.
+                        Rhineland-Palatinate. After early experience in radio hosting (Antenne Kaiserslautern), she
+                        studied acting at the Schule für Schauspiel Hamburg from 2018 to 2022, where she was awarded a scholarship in recognition of her talent.
                     </p>
                     <p class="with-divider" data-i18n="about.biographyParagraphTwo">
-                        She has performed on stage at venues including Junges Schauspielhaus Hamburg and the
-                        Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is
+                        She has performed on stage at venues including Junges Schauspielhaus Hamburg, Landesbühne Vorarlberg in Austria, and Burgfestspiele Bad Vilbel, where she played the title role in Jim Knopf. On television, she is
                         best known for Tatort (Ludwigshafen) and has appeared since 2024 as LKA investigator Mara
                         Hermann.
 
@@ -118,7 +123,7 @@
                         <li><strong data-i18n="meta.height">Height</strong><span>5’1</span></li>
                         <li><strong data-i18n="meta.languages">Languages</strong><span>German, English, Pfälzisch</span>
                         </li>
-                        <li><strong data-i18n="meta.location">Location</strong><span>Hamburg, Berlin, Atlanta</span>
+                        <li><strong data-i18n="meta.location">Location</strong><span>Hamburg, Berlin, Köln, München, Atlanta, Florida</span>
                         </li>
                     </ul>
                     <div class="label-group">
@@ -158,24 +163,56 @@
                 <h2 data-i18n="productions.heading">TV & THEATER</h2>
             </header>
             <div class="productions-grid">
+                                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge" data-i18n="badge.comingSoon">FILM</span>
+                        <img src="assets/images/FILM.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3 style="margin-bottom:3px;">MAMA?</h3>
+                        <p class="year">COMING SOON TO THEATRES</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> GRETA
+                        </p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            <span data-i18n="meta.director">Director</span> - KATHARINA SPORRER<br>
+                        </p>
+                    </div>
+                </article>
                 <article class="production-card">
                     <div class="production-image">
-                        <span class="badge" data-i18n="badge.comingSoon">COMING SOON</span>
+                        <span class="badge" data-i18n="badge.comingSoon">THEATER</span>
+                        <img src="assets/images/sommernachtstraum.JPG" alt="Production still">
+                    </div>
+                    <div class="production-content">
+                        <h3 style="margin-bottom:3px;">Ein Sommernachtstraum</h3>
+                        <p class="year">2026</p>
+                        <p class="role" style="text-transform: uppercase;">
+                            <span data-i18n="role.as">As</span> Hermia, Tom Schnauz
+                        </p>
+                        <p class="meta" style="text-transform: uppercase;">
+                            <span data-i18n="meta.director">Director</span> - Angelika Zacek<br>
+                            <span data-i18n="meta.channel">Theatre</span> - Landesbühne Vorarlberg (Austria)
+                        </p>
+                    </div>
+                </article>
+                <article class="production-card">
+                    <div class="production-image">
+                        <span class="badge" data-i18n="badge.comingSoon">TV</span>
                         <img src="assets/images/IMG_1562.JPG" alt="Production still">
                     </div>
                     <div class="production-content">
-                        <h3 style="margin-bottom:3px;">Tatort – Avanti</h3>
+                        <h3 style="margin-bottom:3px;">Tatort – Sashimi Spezial</h3>
                         <p class="year">2026</p>
                         <p class="role" style="text-transform: uppercase;">
                             <span data-i18n="role.as">As</span> Mara Herrmann
                         </p>
                         <p class="meta" style="text-transform: uppercase;">
-                            <span data-i18n="meta.director">Director</span> – Super Duper Long Directors<br>
+                            <span data-i18n="meta.director">Director</span> – Franziska Margarete Hoenisch<br>
                             <span data-i18n="meta.channel">Channel</span> – ARD
                         </p>
                     </div>
                 </article>
-
                 <article class="production-card">
                     <div class="production-image">
                         <span class="badge" data-i18n="badge.tv">TV</span>
@@ -336,34 +373,66 @@
 
             <div class="gallery-grid">
                 <figure class="gallery-item gallery-card">
-                    <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
+                    <img src="assets/images/Screenshot at Feb 05 19-25-53.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
-                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine</span><br>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
-                    <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
+                    <img src="assets/images/Screenshot at Feb 05 19-29-25.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
-                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
+                        <span data-i18n="gallery.captionTitle">PHILIPP KARADENSKY</span><br>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
-                    <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
+                    <img src="assets/images/Screenshot at Feb 05 19-26-07.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
-                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
                     </figcaption>
                 </figure>
 
                 <figure class="gallery-item gallery-card">
-                    <img src="assets/images/dcbw.png" alt="Portrait – Studio Session 2025">
+                    <img src="assets/images/Screenshot at Feb 05 19-26-18.png" alt="Portrait – Studio Session 2025">
                     <figcaption>
-                        <span data-i18n="gallery.captionTitle">Portrait — Studio Session 2025</span><br>
-                        <span data-i18n="gallery.captionSubtitle">zweizeilig geht</span>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/dcbw.PNG" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/Screenshot at Feb 05 19-26-28.png" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/Screenshot at Feb 05 19-26-41.png" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/Screenshot at Feb 05 19-28-06.png" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/Screenshot at Feb 05 19-28-19.png" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-card">
+                    <img src="assets/images/IMG_0215.JPG" alt="Portrait – Studio Session 2025">
+                    <figcaption>
+                        <span data-i18n="gallery.captionTitle">Alan OVASKA //kleine TEXT</span><br>
                     </figcaption>
                 </figure>
             </div>
