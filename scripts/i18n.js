@@ -94,7 +94,8 @@ export const translations = {
             emailLabel: "E-MAIL",
             agencyLabel: "AGENCY",
             instagram: "INSTAGRAM",
-            sendMessage: "SEND MESSAGE"
+            sendMessage: "SEND MESSAGE",
+            agencyNumber: "Phone:"  
         },
 
         footer: {
@@ -197,7 +198,8 @@ export const translations = {
             emailLabel: "E-MAIL",
             agencyLabel: "AGENTUR",
             instagram: "INSTAGRAM",
-            sendMessage: "NACHRICHT SENDEN"
+            sendMessage: "NACHRICHT SENDEN",
+            agencyNumber: "Telefon:"
         },
 
         footer: {
