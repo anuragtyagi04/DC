@@ -697,21 +697,20 @@ label shit
 }
 
 .gallery-item figcaption {
-  margin-top: 12px;
+  margin-top: 8px;
   font-size: 12px;
   padding: 16px;
   line-height: 1.4;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #2A1A12;
-  text-align: center;
+  text-align: left;
+  color: #5A3522;
 }
 
 .gallery-card {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid #2A1A121A;
   text-align: center;
 }
 

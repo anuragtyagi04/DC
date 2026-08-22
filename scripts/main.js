@@ -103,9 +103,3 @@ document.getElementById("btn-showreel").addEventListener("click", () => {
   });
 });
 
-document.getElementById("btn-contact").addEventListener("click", () => {
-  document.getElementById("contact").scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-});
