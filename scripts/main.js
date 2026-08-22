@@ -128,6 +128,10 @@ const videoTiles = document.querySelectorAll(".video-tile");
 videoTiles.forEach(tile => {
 
   const thumbnailVideo = tile.querySelector("video");
+
+  // Skip tiles that use an image thumbnail
+  if (!thumbnailVideo) return;
+
   const thumbnailTime = Number(tile.dataset.thumbnailTime) || 0;
 
   thumbnailVideo.addEventListener("loadedmetadata", () => {
@@ -139,7 +143,6 @@ videoTiles.forEach(tile => {
 
 });
 
-
 // SWITCH MAIN VIDEO
 videoTiles.forEach(tile => {
 
@@ -147,14 +150,11 @@ videoTiles.forEach(tile => {
 
     const videoSrc = tile.dataset.video;
 
-    // change video
     showreelPlayer.src = videoSrc;
     showreelPlayer.load();
 
-    // start playing
     showreelPlayer.play();
 
-    // active state
     videoTiles.forEach(item => {
       item.classList.remove("is-active");
     });
